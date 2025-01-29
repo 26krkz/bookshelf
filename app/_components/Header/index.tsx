@@ -5,6 +5,7 @@ import { getServerSession } from "@/lib/auth";
 import prisma from "../../../prisma";
 import LoginButton from "../LoginButton";
 import DropdownMenu from "../DropdownMenu";
+import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 export default async function Header() {
   const session = await getServerSession();
@@ -21,12 +22,15 @@ export default async function Header() {
         {!!session && !!profile ? (
           <DropdownMenu image={profile?.image} name={profile?.name} bookshelfId={profile?.bookshelf_id} />
         ) : (
-          <div>
-            <Link href="/how_to_use" className={styles.howToUseLink}>
-              アプリの使いかた
-            </Link>
-            <LoginButton />
-          </div>
+          <>
+            <div className={styles.pcHeaderSideMenu}>
+              <Link href="/how_to_use" className={styles.howToUseLink}>
+                アプリの使いかた
+              </Link>
+              <LoginButton />
+            </div>
+            <HamburgerMenuIcon width={25} height={25} />
+          </>
         )}
       </div>
     </header>

@@ -38,3 +38,18 @@
   text-decoration: none;
   color: #333;
 }
+
+@media screen and (max-width: 400px) {
+  .headerComponent {
+    padding: 0 25px;
+  }
+  .logoText {
+    font-size: 25px;
+  }
+  .logoTextSmall {
+    font-size: 10px;
+  }
+  .pcHeaderSideMenu {
+    display: none;
+  }
+}
