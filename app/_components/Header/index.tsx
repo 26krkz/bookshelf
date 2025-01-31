@@ -6,12 +6,15 @@ import prisma from "../../../prisma";
 import LoginButton from "../LoginButton";
 import DropdownMenu from "../DropdownMenu";
 import HamburgerMenu from "../HamburgerMenu";
+import getDeviceFlag from "@/_services/getDeviceFlag";
 
 export default async function Header() {
   const session = await getServerSession();
   const profile = await prisma.user.findFirst({
     where: { id: session?.user.id },
   });
+  const deviceType = getDeviceFlag();
+
   return (
     <header className={styles.header}>
       <div className={styles.headerComponent}>
@@ -20,7 +23,7 @@ export default async function Header() {
           <span className={styles.logoTextSmall}>- シェアする本棚 -</span>
         </Link>
         {!!session && !!profile ? (
-          <DropdownMenu image={profile?.image} name={profile?.name} bookshelfId={profile?.bookshelf_id} />
+          <DropdownMenu image={profile?.image} name={profile?.name} bookshelfId={profile?.bookshelf_id} deviceType={deviceType} />
         ) : (
           <>
             <div className={styles.pcHeaderSideMenu}>

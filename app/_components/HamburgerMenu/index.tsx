@@ -1,7 +1,5 @@
-"use client";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import * as RadixDropdownMenu from "@radix-ui/react-dropdown-menu";
-import { useState } from "react";
 import Link from "next/link";
 import LoginButton from "../LoginButton";
 import styles from "./styles.module.css";

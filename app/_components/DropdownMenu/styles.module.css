@@ -70,3 +70,32 @@
 .logoutButtonArea {
   text-align: left;
 }
+
+@media screen and (max-width: 750px) {
+  .userCntainer {
+    border: none;
+    margin: 0;
+    border-radius: 9999px;
+  }
+  .userName {
+    display: none;
+  }
+  .chevronDownIcon {
+    display: none;
+  }
+  .userIcon {
+    margin-right: 0;
+  }
+  .icon {
+    margin-right: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .dummyIcon {
+    width: 30px;
+    height: 30px;
+  }
+  .dropdownMenuContent {
+    margin-right: 10px;
+  }
+}
