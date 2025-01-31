@@ -39,7 +39,11 @@
   color: #333;
 }
 
-@media screen and (max-width: 400px) {
+.spHeaderSideMenu {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
   .headerComponent {
     padding: 0 25px;
   }
@@ -51,5 +55,10 @@
   }
   .pcHeaderSideMenu {
     display: none;
+  }
+  .spHeaderSideMenu {
+    display: block;
+    height: 25px;
+    width: 25px;
   }
 }

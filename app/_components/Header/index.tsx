@@ -5,7 +5,7 @@ import { getServerSession } from "@/lib/auth";
 import prisma from "../../../prisma";
 import LoginButton from "../LoginButton";
 import DropdownMenu from "../DropdownMenu";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import HamburgerMenu from "../HamburgerMenu";
 
 export default async function Header() {
   const session = await getServerSession();
@@ -29,7 +29,9 @@ export default async function Header() {
               </Link>
               <LoginButton />
             </div>
-            <HamburgerMenuIcon width={25} height={25} />
+            <div className={styles.spHeaderSideMenu}>
+              <HamburgerMenu />
+            </div>
           </>
         )}
       </div>

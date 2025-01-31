@@ -4,3 +4,9 @@
   background-color: #b56c12;
   color: #fff;
 }
+
+@media screen and (max-width: 750px) {
+  .loginButton {
+    padding: 10px 10px;
+  }
+}
