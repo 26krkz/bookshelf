@@ -1,0 +1,45 @@
+.hamburgerMenuButton {
+  text-decoration: none;
+  color: #333;
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+}
+
+.hamburgerMenuContent {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.hamburgerMenuList {
+  padding: 0;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.listItem {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+}
+
+.listItem:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+}
+
+.loginButtonArea {
+  text-align: left;
+}
