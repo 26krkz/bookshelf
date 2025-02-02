@@ -1,6 +1,3 @@
-.heading {
-  margin-left: 200px;
-}
 .descriptionArea {
   padding: 50px;
   border: 1px solid #ddd;
@@ -21,4 +18,22 @@
 .descriptionImage {
   margin: 20px auto;
   border: 1px solid #eee;
+}
+
+@media screen and (max-width: 750px) {
+  .descriptionArea {
+    padding: 40px;
+    margin: 40px 10px;
+  }
+
+  .descriptionTitle {
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .descriptionImage {
+    margin: 20px auto;
+    border: 1px solid #eee;
+  }
 }
