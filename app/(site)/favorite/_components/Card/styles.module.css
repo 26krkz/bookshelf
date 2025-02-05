@@ -12,18 +12,10 @@
   width: 300px;
 }
 
-.deleteButton {
-  border: none;
-  height: 27px;
-  width: 27px;
-  border-radius: 50%;
-  position: relative;
-}
-
-.clossIcon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  content: "";
-  transform: translate(-50%, -50%);
+@media screen and (max-width: 750px) {
+  .title {
+    margin: 0 10px;
+    font-size: 16px;
+    width: 250px;
+  }
 }
