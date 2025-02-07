@@ -26,3 +26,11 @@
   font-size: 18px;
   color: #333;
 }
+
+@media screen and (max-width: 750px) {
+  .description {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 20px 20px;
+  }
+}
