@@ -44,13 +44,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
 }
 
 .cancelButton {
   font-size: 18px;
   color: #333;
-  padding: 20px 30px;
 }
 
 .withdrawalButton {
@@ -62,4 +61,16 @@
 
 .withdrawalButton:disabled {
   background-color: #ddd;
+}
+
+@media screen and (max-width: 750px) {
+  .description {
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 20px 20px;
+  }
+  .buttonArea {
+    flex-direction: column;
+    gap: 20px;
+  }
 }

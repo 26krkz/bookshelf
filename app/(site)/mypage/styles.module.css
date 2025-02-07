@@ -3,7 +3,7 @@
 }
 
 .list {
-  width: 400px;
+  max-width: 400px;
   border-radius: 30px;
   border: 1px solid #ddd;
   margin: 0 auto;
@@ -22,4 +22,14 @@
 .link {
   text-decoration: none;
   color: #333;
+}
+
+@media screen and (max-width: 750px) {
+  .heading {
+    margin-left: 0;
+  }
+  .list {
+    border-radius: 8px;
+    margin: 0 20px;
+  }
 }
