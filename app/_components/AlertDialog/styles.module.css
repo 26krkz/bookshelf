@@ -4,6 +4,7 @@
   width: 27px;
   border-radius: 50%;
   position: relative;
+  flex-shrink: 0;
 }
 
 .clossIcon {
@@ -45,6 +46,7 @@
 
 .title {
   margin: 10px 0;
+  font-size: 20px;
 }
 
 .description {

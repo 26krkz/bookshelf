@@ -11,3 +11,9 @@
 .noDataText {
   text-align: center;
 }
+
+@media screen and (max-width: 750px) {
+  .heading {
+    margin-left: 0;
+  }
+}
