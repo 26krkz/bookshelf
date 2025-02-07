@@ -14,7 +14,9 @@ export default async function Page() {
   const cardItems = await getBookshelfList();
   return (
     <>
-      <Heading as="h2">本棚を編集</Heading>
+      <Heading className={styles.heading} as="h2">
+        本棚を編集
+      </Heading>
       {!!cardItems.length ? <CardList cards={cardItems} /> : <div className={styles.noDataText}>まだ本棚に登録された本がありません。</div>}
     </>
   );

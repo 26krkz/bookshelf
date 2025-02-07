@@ -4,8 +4,8 @@
 
 .imageWrapper {
   position: relative;
-  width: 172px;
-  height: 240px;
+  width: 215px;
+  height: 300px;
   background-color: #ddd;
 }
 
@@ -52,6 +52,10 @@
 @media screen and (max-width: 750px) {
   .container {
     flex-direction: column;
+  }
+  .imageWrapper {
+    width: 172px;
+    height: 240px;
   }
   .modalTextArea {
     margin-left: 0;

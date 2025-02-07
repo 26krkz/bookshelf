@@ -48,3 +48,22 @@
   position: absolute;
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 750px) {
+  .container {
+    flex-direction: column;
+  }
+  .imageWrapper {
+    width: 172px;
+    height: 240px;
+  }
+  .modalTextArea {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .author {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
